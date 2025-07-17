@@ -32,7 +32,7 @@ int main()
         // - enableHeartbeat (default=true): Starts a daemon heartbeat thread if true
         // - sessionName (default="LukittuAPI"): Optional session name for API requests
         // - heartbeatInterval (default=30): Interval in seconds for heartbeat checks
-        bool success = licenseSystem.verifyLicense(licenseKey, true, "LukittuAPI", 10);
+        bool success = licenseSystem.verifyLicense(licenseKey, true, "LukittuAPI", 30);
         if (success) {
             std::cout << "License verified successfully!" << std::endl;
             int expiration = licenseSystem.getExpirationDays();
