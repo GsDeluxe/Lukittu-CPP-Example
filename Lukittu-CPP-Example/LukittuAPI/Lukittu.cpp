@@ -80,8 +80,6 @@ bool LukittuLicenseSystem::AuthenticationCheck(const std::string& licenseKey, bo
         return false;
     }
 
-    std::cout << response;
-
     nlohmann::json j;
     try {
         j = nlohmann::json::parse(response);
