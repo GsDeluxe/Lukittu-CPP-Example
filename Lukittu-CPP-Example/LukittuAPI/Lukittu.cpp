@@ -69,7 +69,7 @@ bool LukittuLicenseSystem::AuthenticationCheck(const std::string& licenseKey, bo
         {"licenseKey", licenseKey},
         {"productId", product_id},
         {"challenge", challenge},
-        {"deviceIdentifier", deviceIdentifier}
+        {"hardwareIdentifier", deviceIdentifier}
     };
     std::string payload = payloadJson.dump();
 
